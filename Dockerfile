@@ -53,7 +53,7 @@ EXPOSE 6379
 
 
 #zsh
-RUN ZSH_DEP_PACKAGE="software-properties-common build-essential curl" && \
+RUN ZSH_DEP_PACKAGE="software-properties-common build-essential curl supervisor" && \
     apt-get update && apt-get install -y $ZSH_DEP_PACKAGE
 RUN apt-get install -y zsh git
 RUN git clone git://github.com/robbyrussell/oh-my-zsh.git /root/.oh-my-zsh && \
